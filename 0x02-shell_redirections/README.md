@@ -1,1 +1,1 @@
-shell,I/O Redirections and filters project
+shell,I/O Redirections and filters projects
