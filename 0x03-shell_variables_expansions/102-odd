@@ -1,2 +1,2 @@
 #!/bin/bash
-$ sed -n '1p;0~3p' input.txt
+paste - - | cut -f1
