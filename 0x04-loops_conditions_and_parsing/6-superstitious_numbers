@@ -1,22 +1,17 @@
 #!/usr/bin/env bash
-# bash script that displays numbers from 1 to 20
-
-i=1
-
-while [ $i -le 20 ]; do
-	case $i in
-	4)
-		echo -e "$i\nbad luck from China"
+# display numbers from 1 to 20 using while and case statement and prints badluck from various countries
+counter=0
+while [ $counter -lt 20 ]; do
+	(( counter+=1 ))
+	echo "$counter"
+	case $counter in
+		4 )
+			echo "bad luck from China"
 		;;
-	9)
-		echo -e "$i\nbad luck from Japan"
+		9 )
+			echo "bad luck from Japan"
 		;;
-	17)
-		echo -e "$i\nbad luck from Italy"
-		;;
-	*)
-		echo "$i"
-		;;
+		17 )
+			echo "bad luck from Italy"
 	esac
-	((i+=1))
 done
